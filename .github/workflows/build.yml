@@ -24,7 +24,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          cd openclaw-desktop-app
           npm install
 
       - name: Build/Release Electron App
@@ -32,5 +31,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           release: true
-          package_root: openclaw-desktop-app
-          args: "--config.win.target=nsis --config.mac.target=dmg"
