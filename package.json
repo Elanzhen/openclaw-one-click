@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "OpenClaw 一键部署桌面工具",
   "main": "src/main.js",
+  "author": "Elanzhen",
+  "license": "MIT",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"

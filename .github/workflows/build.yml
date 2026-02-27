@@ -33,3 +33,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           release: true
           package_root: openclaw-desktop-app
+          args: "--config.win.target=nsis --config.mac.target=dmg"
