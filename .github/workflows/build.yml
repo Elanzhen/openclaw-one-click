@@ -29,5 +29,8 @@ jobs:
       - name: Build/Release Electron App
         uses: samuelmeuli/action-electron-builder@v1
         with:
+          # 使用系统内置的秘钥，而不是环境变量推送
           github_token: ${{ secrets.GITHUB_TOKEN }}
           release: true
+          # 增加调试日志
+          args: "--config"
